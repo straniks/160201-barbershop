@@ -37,8 +37,10 @@
   <div class="container">
       <div class="row">
           <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+          <!-- У нас может использоваться только один раз тег nav -->
+          <!-- класс second-navigation тут не савсем уместен -->
           <nav class="second-navigation">
-              <ul>
+              <ul><!-- В ul вписать класс breadcrumbs -->
                   <li>
                       <a href="#">Главная</a>
                   </li>
@@ -96,18 +98,19 @@
             
 
         <article class="catalog-content2">
-          <div class="catalog-item">
-            <a href="#">
+          <div class="catalog-item"><!-- Данный див тут лишний -->
+            <a href="#"><!-- Ссылка тут лишняя -->
               <img src="#" alt="">
               <div class="item-description">
                 <h3>Набор для путешествий <span>«Baxter of California»</span></h3>
                 <div class="price-with-button">
-                  <p class="price">2 900 РУБ.</p>
-                  <span class="button">Купить</span>
+                  <p class="price">2 900 РУБ.</p><!-- Тут я бы использовал спан -->
+                  <span class="button">Купить</span><!-- Данный элемент размечается через ссылку -->
                 </div>
               </div>
             </a>
           </article>
+          <!-- Так же исправить все остальные плашки -->
           <article class="catalog-content2">
             <a href="#">
               <img src="" alt="">
@@ -168,12 +171,21 @@
               </div>
             </a>
           </article>
+          <!-- Пагинация размечается так же как и хлебные крошки-->
+          <!-- Твой вариант неверный -->
   <div class="paginator">
       <a href="#1">1</a>
       <a href="#2" class="current">2</a>
       <a href="#3">3</a>
       <a href="#4">3</a>
   </div> 
+  <!-- Верный вариант -->
+  <ul class="paginator">
+    <li><a href="#">1</a></li>
+    <li class="active"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+  </ul>
   <footer class="main-footer">
       <div class="container">
           <section class="footer-contacts">
